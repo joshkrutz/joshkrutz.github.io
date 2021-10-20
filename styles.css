@@ -3,7 +3,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #222018;
+}
+
+html {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 95px;
+    scroll-snap-stop: always;
 }
 
 body:after {
@@ -21,7 +28,12 @@ li, a, button, .logo {
     font-size: 16px;
     color: #e2dec4;
     text-decoration: none;
+    background: rgba(0,0,0,0);
 
+}
+
+h3, p {
+    font-family: "Poppins", sans-serif;
 }
 
 header {
@@ -66,26 +78,8 @@ button:hover {
     background-color: rgba(113, 121, 49, 0.8);
 }
 
-/* Page content */
-.content {
-    padding: 16px;
-}
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-    padding-top: 60px;
-}
-
 .parallax {
     background-image: url("images/colorado.jpg");
-    height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -99,6 +93,7 @@ button:hover {
 }
 
 #me {
+    background-color: #222018;
     border-radius: 100%;
     top: 0;
     width: 500px;
@@ -116,6 +111,14 @@ button:hover {
         transition: all 0.3s steps(10, start) 0s;
     }
 
+
+#headerbar {
+    background-color: #222018;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
 #headerbar #me {
     background: #E2DEC4;
     border-radius: 100%;
@@ -127,16 +130,13 @@ button:hover {
     border: 3px solid white;
 }
 
-
-
-
     #me:hover {
         background-image: url("images/avatar.png");
         background-size: cover;
         transition: all 0.3s steps(10, start) 0s;
     }
 
-main {
+.parallax {
     display: inline-block;
     font-family: "Righteous", sans-serif;
     font-weight: 400;
@@ -146,25 +146,38 @@ main {
     width: 100%;
 }
 
-    main h1 {
-        font-size: 64px;
-        background: transparent;
-        margin-top: 30px;
-    }
+.parallax h1 {
+    font-size: 64px;
+    background: transparent;
+    margin-top: 30px;
+}
 
-    main p {
-        font-size: 32px;
-        width: 60%;
-        margin: 0 auto;
-        margin-top: 10px;
-        background: transparent;
-    }
+.parallax p {
+    font-size: 32px;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 10px;
+    background: transparent;
+}
 
-    main button {
-        margin-top: 30px;
-        scroll-behavior: smooth;
-    }
+.parallax button {
+    margin-top: 30px;
+    scroll-behavior: smooth;
+}
 
-    main #me{
+    .parallax #me{
         margin-top: 100px;
+    }
+
+section {
+    height: calc(100vh - 95px);
+    scroll-snap-align: center;
+}
+
+    section.parallax{
+        height: 100vh;
+    }
+
+    #skills {
+        background: red;
     }

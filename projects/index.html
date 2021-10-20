@@ -1,1 +1,95 @@
-Projects
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Joshua Krutz | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(window).bind('DOMMouseScroll mousewheel', function (event) {
+
+            if (event.originalEvent.wheelDelta >= 0) {
+                ScrollUp(1000);
+            }
+            else {
+                ScrollDown(1000);
+            }
+        });
+
+    </script>
+</head>
+<body>
+    <main class="scroll-container">
+        <section class="parallax">
+            <div class="circle" id="me"> </div>
+            <h1>Joshua Krutz</h1>
+            <p>Computer Science and Cyber Science Aficionado</p>
+            <button id="call-button" onClick="document.getElementById('about').scrollIntoView({behavior: 'smooth'});">Enter Portfolio</button>
+        </section>
+
+        <section id="about">
+            <h3>About</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquet velit ex, ut accumsan quam fermentum a. Sed feugiat eu ligula at hendrerit. Mauris sit amet laoreet orci. Morbi sit amet lacinia nunc. Aliquam ultricies rhoncus iaculis. In hac habitasse platea dictumst. Maecenas ut velit lorem. Aliquam in nisi eu urna luctus ornare.
+                <br /><br />
+                Donec id magna nisi. Fusce dignissim vel massa ut tincidunt. Suspendisse vitae magna non dolor pellentesque malesuada sed ut odio. Nulla non purus sem. Duis quam augue, luctus non tellus ut, pulvinar rhoncus neque. In ac mi finibus, luctus elit vitae, aliquam orci. Fusce sit amet est mi. Nullam fringilla viverra ipsum, quis sollicitudin augue efficitur sed. Vivamus a eleifend nisl. Nam et velit eget magna euismod tincidunt sed eget tortor. Proin malesuada quis metus sed consectetur. Duis nisi massa, posuere non justo eget, varius semper diam. Vivamus nec nisi quis ante tincidunt fermentum sed id lacus. Aliquam bibendum et velit quis viverra. Aenean consequat enim vel nunc eleifend viverra. Vivamus non eros gravida massa pulvinar varius.
+                <br /><br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris metus purus, pulvinar in erat non, tristique ultrices felis. Nam laoreet eget elit id ornare. Nunc sagittis lobortis lectus, vitae dictum odio. In eget sodales libero. Quisque bibendum libero volutpat nisi vulputate, vel iaculis mauris varius. Phasellus feugiat porta est, nec tincidunt nisi.
+                <br /><br />
+                Fusce rhoncus tempor ultrices. Nam laoreet nibh vel felis sollicitudin, euismod congue purus fermentum. Aliquam vel tempor sem, vitae porttitor mi. Praesent mattis magna at eros ornare posuere. Sed eget dui arcu. Integer eleifend ullamcorper tortor, vitae rhoncus erat. Cras ac orci non leo finibus feugiat vel nec orci. Quisque sit amet mollis velit. Proin eget sapien neque. Integer consequat sem id leo tempor sollicitudin. Aliquam varius, elit ut cursus iaculis, eros sapien venenatis massa, id porta sem sapien a nisi. Phasellus gravida aliquam hendrerit. Phasellus sit amet mi mattis, ullamcorper massa id, maximus sapien. Nullam non erat mauris. Donec pellentesque eleifend est, at finibus justo lobortis ultricies.
+                <br /><br />
+                Sed dolor dui, semper ut dapibus a, rutrum nec neque. Praesent a efficitur neque. Duis nec pulvinar diam, at ornare arcu. Sed varius justo ac odio viverra placerat. Donec vitae rhoncus sapien, vitae sollicitudin lectus. Nullam rhoncus elit non venenatis cursus. Integer quis dictum erat. Donec ultrices porta leo, nec faucibus neque pulvinar id. Sed condimentum urna augue, eu bibendum nisi eleifend egestas. Etiam non ligula vitae mauris faucibus tristique. Pellentesque finibus felis ex, at rhoncus lectus commodo id. Integer nec est at magna mattis finibus. Pellentesque in leo sed nisi tristique condimentum non at mauris.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h3>Skills</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquet velit ex, ut accumsan quam fermentum a. Sed feugiat eu ligula at hendrerit. Mauris sit amet laoreet orci. Morbi sit amet lacinia nunc. Aliquam ultricies rhoncus iaculis. In hac habitasse platea dictumst. Maecenas ut velit lorem. Aliquam in nisi eu urna luctus ornare.
+                <br /><br />
+                Donec id magna nisi. Fusce dignissim vel massa ut tincidunt. Suspendisse vitae magna non dolor pellentesque malesuada sed ut odio. Nulla non purus sem. Duis quam augue, luctus non tellus ut, pulvinar rhoncus neque. In ac mi finibus, luctus elit vitae, aliquam orci. Fusce sit amet est mi. Nullam fringilla viverra ipsum, quis sollicitudin augue efficitur sed. Vivamus a eleifend nisl. Nam et velit eget magna euismod tincidunt sed eget tortor. Proin malesuada quis metus sed consectetur. Duis nisi massa, posuere non justo eget, varius semper diam. Vivamus nec nisi quis ante tincidunt fermentum sed id lacus. Aliquam bibendum et velit quis viverra. Aenean consequat enim vel nunc eleifend viverra. Vivamus non eros gravida massa pulvinar varius.
+                <br /><br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris metus purus, pulvinar in erat non, tristique ultrices felis. Nam laoreet eget elit id ornare. Nunc sagittis lobortis lectus, vitae dictum odio. In eget sodales libero. Quisque bibendum libero volutpat nisi vulputate, vel iaculis mauris varius. Phasellus feugiat porta est, nec tincidunt nisi.
+                <br /><br />
+                Fusce rhoncus tempor ultrices. Nam laoreet nibh vel felis sollicitudin, euismod congue purus fermentum. Aliquam vel tempor sem, vitae porttitor mi. Praesent mattis magna at eros ornare posuere. Sed eget dui arcu. Integer eleifend ullamcorper tortor, vitae rhoncus erat. Cras ac orci non leo finibus feugiat vel nec orci. Quisque sit amet mollis velit. Proin eget sapien neque. Integer consequat sem id leo tempor sollicitudin. Aliquam varius, elit ut cursus iaculis, eros sapien venenatis massa, id porta sem sapien a nisi. Phasellus gravida aliquam hendrerit. Phasellus sit amet mi mattis, ullamcorper massa id, maximus sapien. Nullam non erat mauris. Donec pellentesque eleifend est, at finibus justo lobortis ultricies.
+                <br /><br />
+                Sed dolor dui, semper ut dapibus a, rutrum nec neque. Praesent a efficitur neque. Duis nec pulvinar diam, at ornare arcu. Sed varius justo ac odio viverra placerat. Donec vitae rhoncus sapien, vitae sollicitudin lectus. Nullam rhoncus elit non venenatis cursus. Integer quis dictum erat. Donec ultrices porta leo, nec faucibus neque pulvinar id. Sed condimentum urna augue, eu bibendum nisi eleifend egestas. Etiam non ligula vitae mauris faucibus tristique. Pellentesque finibus felis ex, at rhoncus lectus commodo id. Integer nec est at magna mattis finibus. Pellentesque in leo sed nisi tristique condimentum non at mauris.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h3>Projects</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquet velit ex, ut accumsan quam fermentum a. Sed feugiat eu ligula at hendrerit. Mauris sit amet laoreet orci. Morbi sit amet lacinia nunc. Aliquam ultricies rhoncus iaculis. In hac habitasse platea dictumst. Maecenas ut velit lorem. Aliquam in nisi eu urna luctus ornare.
+                <br /><br />
+                Donec id magna nisi. Fusce dignissim vel massa ut tincidunt. Suspendisse vitae magna non dolor pellentesque malesuada sed ut odio. Nulla non purus sem. Duis quam augue, luctus non tellus ut, pulvinar rhoncus neque. In ac mi finibus, luctus elit vitae, aliquam orci. Fusce sit amet est mi. Nullam fringilla viverra ipsum, quis sollicitudin augue efficitur sed. Vivamus a eleifend nisl. Nam et velit eget magna euismod tincidunt sed eget tortor. Proin malesuada quis metus sed consectetur. Duis nisi massa, posuere non justo eget, varius semper diam. Vivamus nec nisi quis ante tincidunt fermentum sed id lacus. Aliquam bibendum et velit quis viverra. Aenean consequat enim vel nunc eleifend viverra. Vivamus non eros gravida massa pulvinar varius.
+                <br /><br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris metus purus, pulvinar in erat non, tristique ultrices felis. Nam laoreet eget elit id ornare. Nunc sagittis lobortis lectus, vitae dictum odio. In eget sodales libero. Quisque bibendum libero volutpat nisi vulputate, vel iaculis mauris varius. Phasellus feugiat porta est, nec tincidunt nisi.
+                <br /><br />
+                Fusce rhoncus tempor ultrices. Nam laoreet nibh vel felis sollicitudin, euismod congue purus fermentum. Aliquam vel tempor sem, vitae porttitor mi. Praesent mattis magna at eros ornare posuere. Sed eget dui arcu. Integer eleifend ullamcorper tortor, vitae rhoncus erat. Cras ac orci non leo finibus feugiat vel nec orci. Quisque sit amet mollis velit. Proin eget sapien neque. Integer consequat sem id leo tempor sollicitudin. Aliquam varius, elit ut cursus iaculis, eros sapien venenatis massa, id porta sem sapien a nisi. Phasellus gravida aliquam hendrerit. Phasellus sit amet mi mattis, ullamcorper massa id, maximus sapien. Nullam non erat mauris. Donec pellentesque eleifend est, at finibus justo lobortis ultricies.
+                <br /><br />
+                Sed dolor dui, semper ut dapibus a, rutrum nec neque. Praesent a efficitur neque. Duis nec pulvinar diam, at ornare arcu. Sed varius justo ac odio viverra placerat. Donec vitae rhoncus sapien, vitae sollicitudin lectus. Nullam rhoncus elit non venenatis cursus. Integer quis dictum erat. Donec ultrices porta leo, nec faucibus neque pulvinar id. Sed condimentum urna augue, eu bibendum nisi eleifend egestas. Etiam non ligula vitae mauris faucibus tristique. Pellentesque finibus felis ex, at rhoncus lectus commodo id. Integer nec est at magna mattis finibus. Pellentesque in leo sed nisi tristique condimentum non at mauris.
+            </p>
+        </section>
+
+        <section id="contact">
+            <h3>Contact</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquet velit ex, ut accumsan quam fermentum a. Sed feugiat eu ligula at hendrerit. Mauris sit amet laoreet orci. Morbi sit amet lacinia nunc. Aliquam ultricies rhoncus iaculis. In hac habitasse platea dictumst. Maecenas ut velit lorem. Aliquam in nisi eu urna luctus ornare.
+                <br /><br />
+                Donec id magna nisi. Fusce dignissim vel massa ut tincidunt. Suspendisse vitae magna non dolor pellentesque malesuada sed ut odio. Nulla non purus sem. Duis quam augue, luctus non tellus ut, pulvinar rhoncus neque. In ac mi finibus, luctus elit vitae, aliquam orci. Fusce sit amet est mi. Nullam fringilla viverra ipsum, quis sollicitudin augue efficitur sed. Vivamus a eleifend nisl. Nam et velit eget magna euismod tincidunt sed eget tortor. Proin malesuada quis metus sed consectetur. Duis nisi massa, posuere non justo eget, varius semper diam. Vivamus nec nisi quis ante tincidunt fermentum sed id lacus. Aliquam bibendum et velit quis viverra. Aenean consequat enim vel nunc eleifend viverra. Vivamus non eros gravida massa pulvinar varius.
+                <br /><br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris metus purus, pulvinar in erat non, tristique ultrices felis. Nam laoreet eget elit id ornare. Nunc sagittis lobortis lectus, vitae dictum odio. In eget sodales libero. Quisque bibendum libero volutpat nisi vulputate, vel iaculis mauris varius. Phasellus feugiat porta est, nec tincidunt nisi.
+                <br /><br />
+                Fusce rhoncus tempor ultrices. Nam laoreet nibh vel felis sollicitudin, euismod congue purus fermentum. Aliquam vel tempor sem, vitae porttitor mi. Praesent mattis magna at eros ornare posuere. Sed eget dui arcu. Integer eleifend ullamcorper tortor, vitae rhoncus erat. Cras ac orci non leo finibus feugiat vel nec orci. Quisque sit amet mollis velit. Proin eget sapien neque. Integer consequat sem id leo tempor sollicitudin. Aliquam varius, elit ut cursus iaculis, eros sapien venenatis massa, id porta sem sapien a nisi. Phasellus gravida aliquam hendrerit. Phasellus sit amet mi mattis, ullamcorper massa id, maximus sapien. Nullam non erat mauris. Donec pellentesque eleifend est, at finibus justo lobortis ultricies.
+                <br /><br />
+                Sed dolor dui, semper ut dapibus a, rutrum nec neque. Praesent a efficitur neque. Duis nec pulvinar diam, at ornare arcu. Sed varius justo ac odio viverra placerat. Donec vitae rhoncus sapien, vitae sollicitudin lectus. Nullam rhoncus elit non venenatis cursus. Integer quis dictum erat. Donec ultrices porta leo, nec faucibus neque pulvinar id. Sed condimentum urna augue, eu bibendum nisi eleifend egestas. Etiam non ligula vitae mauris faucibus tristique. Pellentesque finibus felis ex, at rhoncus lectus commodo id. Integer nec est at magna mattis finibus. Pellentesque in leo sed nisi tristique condimentum non at mauris.
+            </p>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="scroll.js"></script>
+</body>
+</html>
+

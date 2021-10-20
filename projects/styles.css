@@ -1,0 +1,25 @@
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+section {
+    height: 100vh;
+    background: purple;
+}
+
+#about {
+    background: red;
+}
+
+#skills {
+    background: yellow;
+}
+
+#projects {
+    background: green;
+}
+
+#contact {
+    background: blue;
+}
