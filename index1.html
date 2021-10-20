@@ -4,20 +4,7 @@
     <title>Joshua Krutz | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $(window).unbind('DOMMouseScroll mousewheel').bind('DOMMouseScroll mousewheel', function (event) {
-                if (event.originalEvent.wheelDelta >= 0) {
-                    ScrollUp(1000);
-                }
-                else {
-                    ScrollDown(1000);
-                }
-            })
-        });
 
-    </script>
 </head>
 <body>
     <main class="scroll-container">
@@ -27,6 +14,20 @@
             <p>Computer Science and Cyber Science Aficionado</p>
             <button id="call-button" onClick="document.getElementById('about').scrollIntoView({behavior: 'smooth'});">Enter Portfolio</button>
         </section>
+
+        <header id="headerbar">
+            <div class="circle" id="me"></div>
+            <h2 class="logo">Joshua Krutz</h2>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </nav>
+            <a href="#contact"><button>Contact</button></a>
+        </header>
+
 
         <section id="about">
             <h3>About</h3>

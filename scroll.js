@@ -18,26 +18,7 @@ window.addEventListener("mousewheel", function () { // or window.addEventListene
 }, false);
 
 function scrollFinished() {
-    var vh = document.body.clientHeight;
-    var loc = window.pageYOffset || window.scrollTop;
-    if (loc == null) {
-        loc = 0;
-    }
-    if (loc >= lastLoc) {
-        // downscroll code
-        console.log("down");
-        window.scroll({
-            top: 1000,
-            behavior: 'smooth'
-        });
-    } else {
-        // upscroll code
-        console.log("up");
-        window.scroll({
-            top: 1000,
-            behavior: 'smooth'
-        });
-    }
+
 }
 
 window.addEventListener("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove", function () {
@@ -50,3 +31,14 @@ window.addEventListener("scroll mousedown wheel DOMMouseScroll mousewheel keyup 
             window.scrollTo(scrollLeft, scrollTop);
         };
 });
+
+var menu = document.getElementById("menu");
+
+document.addEventListener('click', function (e) {
+    var target = e.target || e.srcElement;
+    var text = target.id;
+    if (text === "menu-li" || text === "contact-btn") {
+        var id = target.textContent.toLowerCase() || target.innerText.toLowerCase();
+        document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+})
