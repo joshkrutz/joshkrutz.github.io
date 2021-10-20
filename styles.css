@@ -13,6 +13,20 @@ html {
     scroll-snap-stop: always;
 }
 
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+    html {
+        scroll-padding-top: 95px;
+    }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+    html {
+        scroll-padding-top: 10vh;
+    }
+}
+
 body:after {
     position: absolute;
     width: 0;
@@ -25,7 +39,7 @@ body:after {
 li, a, button, .logo {
     font-family: "Rubik", "Montserrat", "Poppins", sans-serif;
     font-weight: 500;
-    font-size: 1vw;
+    font-size: 16px;
     color: #e2dec4;
     text-decoration: none;
     background: rgba(0,0,0,0);
@@ -44,7 +58,7 @@ header {
 }
 
 .logo {
-    font-size: 2vw;
+    font-size: 24px;
 }
 
 #menu {
@@ -118,7 +132,23 @@ button:hover {
     position: sticky;
     top: 0;
     z-index: 2;
+    height: 95px;
 }
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+    #headerbar {
+        height: 95px;
+    }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+    #headerbar {
+        height: 10vh;
+    }
+}
+
+
 #headerbar #me {
     background: #E2DEC4;
     border-radius: 100%;
@@ -139,45 +169,122 @@ button:hover {
         justify-content: left;
     }
 
+
     #me:hover {
         background-image: url("images/avatar.png");
         background-size: cover;
         transition: all 0.3s steps(10, start) 0s;
     }
 
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+    #headerbar div.class {
+        width: 75px;
+        height: 75px;
+    }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+    #headerbar div.class {
+        width: 25vw;
+        height: 25vw;
+    }
+}
+
 .parallax {
     display: inline-block;
     font-family: "Righteous", sans-serif;
     font-weight: 400;
     color: #E2DEC4;
-    text-shadow: 0px 0.2vw #222018;
+    text-shadow: 0px 5px #222018;
     text-align: center;
     width: 100%;
 }
 
 .parallax h1 {
-    font-size: 5vw;
+    font-size: 64px;
     background: transparent;
     margin-top: 30px;
 }
 
-    .parallax p {
-        font-size: 2vw;
-        width: 60%;
-        margin: 0 auto;
-        margin-top: 10px;
-        background: transparent;
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+    .parallax h1 {
+        font-size: 64px;
     }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+    .parallax h1 {
+        font-size: 10vw;
+    }
+}
+
+.parallax p {
+    font-size: 32px;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 10px;
+    background: transparent;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+    .parallax p {
+        font-size: 32px;
+    }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+    .parallax p {
+        font-size: 5vw;
+    }
+}
 
 .parallax button {
-    font-size: 1.25vw;
     margin-top: 30px;
     scroll-behavior: smooth;
+    width: 250px;
+}
+
+/* If the screen size is 351px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 351px) {
+    .parallax button {
+        width: 250px;
+    }
+}
+
+/* If the screen size is 350px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 350px) {
+    .parallax button {
+        width: 50vw;
+        font-size: 5vw;
+    }
 }
 
     .parallax #me{
         margin-top: 100px;
     }
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+    .parallax #me {
+        width: 450px;
+        height: 450px;
+    }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+    .parallax #me {
+        width: 75vw;
+        height: 75vw;
+    }
+}
 
 section {
     height: calc(100vh - 95px);
@@ -185,64 +292,167 @@ section {
     overflow: hidden;
 }
 
-    section.parallax{
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+    section {
+        height: calc(100vh - 95px);
+    }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+    section {
+        height: 90vh;
+    }
+}
+
+    section.parallax {
         height: 100vh;
     }
 
+    #about {
+        background-color: #222018;
+    }
+
+        #about div {
+            padding: 40px;
+            width: 60%;
+            margin: 0 auto;
+            color: #A2B7CB;
+            transition: all 0.3s steps(10, start) 0s;
+        }
+
+
+    /* If the screen size is 1351px wide or more, set the font-size of <div> to 80px */
+    @media screen and (min-width: 1351px) {
+        #about div {
+            width: 60%;
+            padding: 40px;
+        }
+    }
+
+    /* If the screen size is 1350px wide or less, set the font-size of <div> to 30px */
+    @media screen and (max-width: 1350px) {
+        #about div {
+            width: 90vw;
+            padding: 10px;
+        }
+    }
+
+
     #skills {
-        background: red;
+        background-color: #4A502E;
     }
 
-    section p{
-        font-size: 1.1vw;
+        #skills div {
+            padding: 40px;
+            width: 60%;
+            margin: 0 auto;
+            color: #E2DEC4;
+            transition: all 0.3s steps(10, start) 0s;
+        }
+
+    /* If the screen size is 1351px wide or more, set the font-size of <div> to 80px */
+    @media screen and (min-width: 1351px) {
+        #skills div {
+            width: 60%;
+            padding: 40px;
+        }
     }
 
-#about {
-    background-color: #222018;
-    
+    /* If the screen size is 1350px wide or less, set the font-size of <div> to 30px */
+    @media screen and (max-width: 1350px) {
+        #skills div {
+            width: 90vw;
+            padding: 10px;
+        }
+    }
+
+    #projects {
+        background-color: #E2DEC4;
+    }
+
+        #projects div {
+            padding: 40px;
+            width: 60%;
+            margin: 0 auto;
+            color: #4A502E;
+            transition: all 0.3s steps(10, start) 0s;
+        }
+
+    /* If the screen size is 1351px wide or more, set the font-size of <div> to 80px */
+    @media screen and (min-width: 1351px) {
+        #projects div {
+            width: 60%;
+            padding: 40px;
+        }
+    }
+
+    /* If the screen size is 1350px wide or less, set the font-size of <div> to 30px */
+    @media screen and (max-width: 1350px) {
+        #projects div {
+            width: 90vw;
+            padding: 10px;
+        }
+    }
+
+    #contact {
+        background-color: #A76848;
+    }
+
+        #contact div {
+            padding: 40px;
+            width: 60%;
+            margin: 0 auto;
+            color: #181611;
+            transition: all 0.3s steps(10, start) 0s;
+        }
+
+    /* If the screen size is 1351px wide or more, set the font-size of <div> to 80px */
+    @media screen and (min-width: 1351px) {
+        #contact div {
+            width: 60%;
+            padding: 40px;
+        }
+    }
+
+    /* If the screen size is 1350px wide or less, set the font-size of <div> to 30px */
+    @media screen and (max-width: 1350px) {
+        #contact div {
+            width: 90vw;
+            padding: 10px;
+        }
+    }
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+    h3 {
+        font-size: 50px;
+    }
 }
 
-    #about div {
-        padding: 40px;
-        width: 60%;
-        margin: 0 auto;
-        color: #A2B7CB;
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+    h3 {
+        font-size: 9vw;
     }
-
-#skills {
-    background-color: #4A502E;
 }
 
-    #skills div {
-        padding: 40px;
-        width: 60%;
-        margin: 0 auto;
-        color: #E2DEC4;
-    }
-
-#projects {
-    background-color: #E2DEC4;
+p {
+    font-size: 2.3vw;
+    transition: all 0.3s steps(10, start) 0s;
 }
 
-    #projects div {
-        padding: 40px;
-        width: 60%;
-        margin: 0 auto;
-        color: #4A502E;
+/* If the screen size is 900px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 900px) {
+    p {
+        font-size: 16px;
     }
-
-
-#contact {
-    background-color: #A76848;
 }
 
-    #contact div {
-        padding: 40px;
-        width: 60%;
-        margin: 0 auto;
-        color: #181611;
+/* If the screen size is 400px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 400px) {
+    p {
+        font-size: 3.4vw;
     }
-h3 {
-    font-size: 3vw;
-    padding-bottom: 50px;
 }
