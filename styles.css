@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Poppins&family=Rubik&family=Righteous&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #222018;
+}
+
+body:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url("images/avatar.png") url("images/Krutz_Headshot.png");
+}
+
+li, a, button, .logo {
+    font-family: "Rubik", "Montserrat", "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #e2dec4;
+    text-decoration: none;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+}
+
+.logo {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.menu li a{
+    transition: all 0.3s ease 0s;
+}
+
+.menu li a:hover{
+    color: #727931;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(113, 121, 49, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(113, 121, 49, 0.8);
+}
+
+/* Page content */
+.content {
+    padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 60px;
+}
+
+.parallax {
+    background-image: url("images/colorado.jpg");
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+#me {
+    border-radius: 100%;
+    top: 0;
+    width: 500px;
+    height: 500px;
+    background-image: url("images/Krutz_Headshot.png");
+    background-size: cover;
+    transition: all 0.3s steps(10, start) 0s;
+    border: 8px solid #E2DEC4;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+    #me:hover {
+        background-image: url("images/avatar.png");
+        background-size: cover;
+        transition: all 0.3s steps(10, start) 0s;
+    }
+
+#headerbar #me {
+    background: #E2DEC4;
+    border-radius: 100%;
+    top: 0;
+    width: 75px;
+    height: 75px;
+    background-image: url("images/avatar.png");
+    background-size: cover;
+    border: 3px solid white;
+}
+
+
+
+
+    #me:hover {
+        background-image: url("images/avatar.png");
+        background-size: cover;
+        transition: all 0.3s steps(10, start) 0s;
+    }
+
+main {
+    display: inline-block;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    color: #E2DEC4;
+    text-shadow: 0px 5px #222018;
+    text-align: center;
+    width: 100%;
+}
+
+    main h1 {
+        font-size: 64px;
+        background: transparent;
+        margin-top: 30px;
+    }
+
+    main p {
+        font-size: 32px;
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 10px;
+        background: transparent;
+    }
+
+    main button {
+        margin-top: 30px;
+        scroll-behavior: smooth;
+    }
+
+    main #me{
+        margin-top: 100px;
+    }
