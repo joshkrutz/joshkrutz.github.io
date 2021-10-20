@@ -8,7 +8,7 @@
 html {
     height: 100vh;
     overflow-y: scroll;
-    overflow-x: clip;
+    overflow-x: hidden;
     padding: 0px;
     scroll-snap-type: y mandatory;
     scroll-padding-top: 95px;
