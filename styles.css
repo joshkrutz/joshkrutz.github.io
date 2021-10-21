@@ -45,7 +45,7 @@ li, a, button, .logo {
     color: #e2dec4;
     text-decoration: none;
     background: rgba(0,0,0,0);
-
+    text-transform: uppercase;
 }
 
 h3, p {
@@ -135,6 +135,7 @@ button:hover {
     top: 0;
     z-index: 2;
     height: 95px;
+    text-transform: uppercase;
 }
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) {
