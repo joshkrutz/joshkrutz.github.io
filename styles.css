@@ -7,8 +7,8 @@
 
 html {
     height: 100vh;
+    overflow: hidden;
     overflow-y: scroll;
-    overflow-x: hidden;
     padding: 0px;
     scroll-snap-type: y mandatory;
     scroll-padding-top: 95px;
@@ -25,6 +25,7 @@ html {
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
     html {
+        scroll-snap-type: none;
         scroll-padding-top: 10vh;
     }
 }
@@ -61,6 +62,25 @@ header {
 
 .logo {
     font-size: 24px;
+    visibility: visible;
+    margin-left: 90px;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+    .logo {
+        visibility: visible;
+    }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+    .logo {
+        display: none;
+    }
+    #contact-btn {
+        display: none;
+    }
 }
 
 #menu {
@@ -80,6 +100,13 @@ header {
 #menu li a:hover{
     color: #727931;
 }
+
+        #menu li:nth-child(3) {
+            text-align: center;
+            width: -moz-available;
+            width: -webkit-fill-available;
+            width: stretch;
+        }
 
 button {
     padding: 9px 25px;
@@ -119,7 +146,6 @@ button:hover {
     transition: all 0.3s steps(10, start) 0s;
     border: 8px solid #E2DEC4;
     margin: 0 auto;
-    padding-top: 20px;
 }
     #me:hover {
         background-image: url("images/avatar.png");
@@ -136,6 +162,7 @@ button:hover {
     z-index: 2;
     height: 95px;
     text-transform: uppercase;
+    width: 100%;
 }
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) {
@@ -161,13 +188,14 @@ button:hover {
     background-image: url("images/avatar.png");
     background-size: cover;
     border: 3px solid white;
-    margin: 0 0;
-    margin-right: 50px;
+    margin-top: 2.5px;
+    position: absolute;
 }
 
     #logoandpic{
         width: 50%;
         display: flex;
+        height: 100%;
         align-items: center;
         justify-content: left;
     }
@@ -197,7 +225,6 @@ button:hover {
 }
 
 .parallax {
-    display: inline-block;
     font-family: "Righteous", sans-serif;
     font-weight: 400;
     color: #E2DEC4;
@@ -305,7 +332,7 @@ section {
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
     section {
-        height: 90vh;
+        height: fit-content;
     }
 }
 

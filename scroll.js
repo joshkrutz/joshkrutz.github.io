@@ -41,4 +41,7 @@ document.addEventListener('click', function (e) {
         var id = target.textContent.toLowerCase() || target.innerText.toLowerCase();
         document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
     }
+    else if (text == "call-button") {
+        document.getElementById("about").scrollIntoView({ behavior: 'smooth' });
+    }
 })
