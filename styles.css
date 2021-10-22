@@ -350,6 +350,35 @@ button:hover {
     }
 }
 
+.hidden-list{
+    display:none;
+}
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+    .hidden-list {
+        display: inline-block;
+    }
+    #menu {
+        display: table;
+    }
+
+        #menu #firstrow {
+            display: table-row;
+        }
+        #menu #secondrow {
+            display: table-row;
+        }
+        #menu li{
+            display: table-cell;
+        }
+
+            #menu li:nth-child( odd ) {
+                text-align: left;
+            }
+            #menu li:nth-child( even ){
+                text-align: right;
+            }
+
 section {
     height: calc(100vh - 95px);
     scroll-snap-align: center;

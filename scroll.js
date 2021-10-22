@@ -37,7 +37,7 @@ var menu = document.getElementById("menu");
 document.addEventListener('click', function (e) {
     var target = e.target || e.srcElement;
     var text = target.id;
-    if (text === "menu-li" || text === "contact-btn") {
+    if (text === "contact-btn") {
         var id = target.textContent.toLowerCase() || target.innerText.toLowerCase();
         document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
     }
