@@ -10,6 +10,7 @@ html {
     overflow: hidden;
     overflow-y: scroll;
     padding: 0px;
+    scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     scroll-padding-top: 95px;
     scroll-snap-stop: always;
