@@ -63,6 +63,7 @@ h3, p {
 }
 
 header {
+    scroll-behavior: smooth;
     z-index: 3;
     display: flex;
     justify-content: space-between;
