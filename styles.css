@@ -26,7 +26,7 @@ html {
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
     html {
-        scroll-snap-type: proximity;
+        scroll-snap-type: y proximity;
         scroll-padding-top: 10vh;
     }
 }
@@ -34,7 +34,7 @@ html {
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-height: 900px) {
     html {
-        scroll-snap-type: proximity;
+        scroll-snap-type: y proximity;
         scroll-padding-top: 10vh;
     }
 }
