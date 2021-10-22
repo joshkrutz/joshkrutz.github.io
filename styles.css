@@ -164,7 +164,7 @@ button:hover {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 9;
     height: 95px;
     text-transform: uppercase;
     width: 100%;
