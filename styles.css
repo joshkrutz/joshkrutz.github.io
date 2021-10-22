@@ -95,6 +95,7 @@ header {
 
 #menu {
     list-style: none;
+    display: flex;
 }
 
     #menu li {
@@ -358,6 +359,7 @@ button:hover {
     .hidden-list {
         display: inline-block;
     }
+
     #menu {
         display: table;
     }
@@ -365,20 +367,23 @@ button:hover {
         #menu #firstrow {
             display: table-row;
         }
+
         #menu #secondrow {
             display: table-row;
         }
-        #menu li{
+
+        #menu li {
             display: table-cell;
         }
 
             #menu li:nth-child( odd ) {
                 text-align: left;
             }
-            #menu li:nth-child( even ){
+
+            #menu li:nth-child( even ) {
                 text-align: right;
             }
-
+}
 section {
     height: calc(100vh - 95px);
     scroll-snap-align: center;
