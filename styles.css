@@ -91,6 +91,9 @@ header {
     #contact-btn {
         display: none;
     }
+    header {
+        transition: all 0s ease 0s;
+    }
 }
 
 #menu {
