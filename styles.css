@@ -30,6 +30,14 @@ html {
     }
 }
 
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-height: 900px) {
+    html {
+        scroll-snap-type: none;
+        scroll-padding-top: 10vh;
+    }
+}
+
 body:after {
     position: absolute;
     width: 0;
@@ -101,12 +109,7 @@ header {
     color: #727931;
 }
 
-        #menu li:nth-child(3) {
-            text-align: center;
-            width: -moz-available;
-            width: -webkit-fill-available;
-            width: stretch;
-        }
+        
 
 button {
     padding: 9px 25px;
@@ -253,6 +256,13 @@ button:hover {
     }
 }
 
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-height: 900px) {
+    .parallax h1 {
+        font-size: min(6vw, 10vh);
+    }
+}
+
 .parallax p {
     font-size: 32px;
     width: 60%;
@@ -275,6 +285,13 @@ button:hover {
     }
 }
 
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-height: 900px) {
+    .parallax p {
+        font-size: min(3vh, 5vw);
+    }
+}
+
 .parallax button {
     margin-top: 30px;
     scroll-behavior: smooth;
@@ -291,8 +308,15 @@ button:hover {
 /* If the screen size is 350px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 350px) {
     .parallax button {
-        width: 50vw;
-        font-size: 5vw;
+        width: min(20vh, 50vw);
+        font-size: min(2vh, 5vw);
+    }
+}
+
+@media screen and (max-height: 900px) {
+    .parallax button {
+        width: min(30vh, 50vw);
+        font-size: min(2vh, 5vw);
     }
 }
 
@@ -316,6 +340,14 @@ button:hover {
     }
 }
 
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-height: 900px) {
+    .parallax #me {
+        width: 30vh;
+        height: 30vh;
+    }
+}
+
 section {
     height: calc(100vh - 95px);
     scroll-snap-align: center;
@@ -331,6 +363,13 @@ section {
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
+    section {
+        height: fit-content;
+    }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-height: 900px) {
     section {
         height: fit-content;
     }
